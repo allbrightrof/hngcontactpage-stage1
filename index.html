@@ -22,7 +22,7 @@
                         aria-describedby="fullNameError"
                         required
                     >
-                    <span id="fullNameError" class="error-message" role="alert"></span>
+                    <span id="fullNameError" class="error-message" role="alert" data-testid="test-contact-error-name"></span>
                 </div>
 
                 <div class="form-group">
@@ -48,7 +48,7 @@
                         aria-describedby="subjectError"
                         required
                     >
-                    <span id="subjectError" class="error-message" role="alert"></span>
+                    <span id="subjectError" class="error-message" role="alert" data-testid="test-contact-error-subject"></span>
                 </div>
 
                 <div class="form-group">
@@ -61,7 +61,7 @@
                         rows="5"
                         required
                     ></textarea> 
-                    <span id="messageError" class="error-message" role="alert"></span>
+                    <span id="messageError" class="error-message" role="alert" data-testid="test-contact-error-message"></span>
                 </div> 
 
                 <button type="submit" data-testid="test-contact-submit">Submit</button>
@@ -70,6 +70,6 @@
             <div id="successMessage" class="success-message" data-testid="test-contact-success" role="alert" aria-live="polite"></div>
         </div>
     </main>
-    <style src="index.js"></style>
+    <script src="index.js"></script>
 </body>
 </html>
